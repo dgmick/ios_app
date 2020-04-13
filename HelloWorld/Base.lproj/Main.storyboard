@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HelloWorld" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dsa-fc-qas" userLabel="FirstButton">
+                                <rect key="frame" x="64.5" y="413.5" width="285" height="69"/>
+                                <inset key="contentEdgeInsets" minX="22" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Sign in with Facebook" backgroundImage="FB">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QDt-hl-dFj">
+                                <rect key="frame" x="64.5" y="492.5" width="285" height="69"/>
+                                <inset key="contentEdgeInsets" minX="22" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Sign in with Google" backgroundImage="Google"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login or Create an account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VRK-0T-Edl">
+                                <rect key="frame" x="104" y="372.5" width="206.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eho-Ba-NKu">
+                                <rect key="frame" x="207" y="342.5" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="44"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dg mick" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="70P-44-zL7">
+                                <rect key="frame" x="175.5" y="591.5" width="63" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Capture d’écran 2020-04-13 à 12.43.00" translatesAutoresizingMaskIntoConstraints="NO" id="dd0-hU-xDE">
+                                <rect key="frame" x="25.5" y="126.5" width="363" height="216"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Dsa-fc-qas" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="10q-Ib-g6C"/>
+                            <constraint firstItem="VRK-0T-Edl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1ij-ZF-O76"/>
+                            <constraint firstItem="eho-Ba-NKu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="D6m-1X-qJK"/>
+                            <constraint firstItem="QDt-hl-dFj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Oze-bV-GMf"/>
+                            <constraint firstItem="Dsa-fc-qas" firstAttribute="top" secondItem="VRK-0T-Edl" secondAttribute="bottom" constant="20" id="UYF-VM-d9o"/>
+                            <constraint firstItem="70P-44-zL7" firstAttribute="top" secondItem="QDt-hl-dFj" secondAttribute="bottom" constant="30" id="ck2-PY-2g6"/>
+                            <constraint firstItem="VRK-0T-Edl" firstAttribute="top" secondItem="eho-Ba-NKu" secondAttribute="bottom" constant="30" id="d3H-Zz-BjC"/>
+                            <constraint firstItem="VRK-0T-Edl" firstAttribute="top" secondItem="dd0-hU-xDE" secondAttribute="bottom" constant="30" id="kQg-SX-xl2"/>
+                            <constraint firstItem="70P-44-zL7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oF9-Dj-viL"/>
+                            <constraint firstItem="dd0-hU-xDE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ptd-I2-BXm"/>
+                            <constraint firstItem="Dsa-fc-qas" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="tX6-xJ-6aj"/>
+                            <constraint firstItem="QDt-hl-dFj" firstAttribute="top" secondItem="Dsa-fc-qas" secondAttribute="bottom" constant="10" id="zfC-dZ-utw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="109.82142857142857"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Capture d’écran 2020-04-13 à 12.43.00" width="363" height="216"/>
+        <image name="FB" width="285" height="69"/>
+        <image name="Google" width="285" height="69"/>
+    </resources>
+</document>
